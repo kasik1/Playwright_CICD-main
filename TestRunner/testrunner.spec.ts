@@ -24,12 +24,13 @@ describe("Run basic E2E EA App site test", async () => {
       await page.click("//div[@class='menu-btn__burger']")
       await page.waitForSelector("//span[contains(text(),'Production Control')]")
       await page.click("//span[contains(text(),'Production Control')]")
-      await page.click("//span[@class='user-avatar']");
-      await page.waitForTimeout(3000)
+      // await page.click("//span[@class='user-avatar']");
+      // await page.setDefaultNavigationTimeout(50000);
 
 
-      await page.waitForSelector("//span[contains(text(),'Logout')]")
-      await page.click("//span[contains(text(),'Logout')]");
+      // await page.waitForSelector("//span[contains(text(),'Logout')]")
+      // await page.click("//span[contains(text(),'Logout')]");
+      // await page.setDefaultNavigationTimeout(50000);
       
     
     });
